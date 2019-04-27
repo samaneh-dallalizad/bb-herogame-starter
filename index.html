@@ -3,13 +3,15 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="lib/mocha.css" rel="stylesheet" />
+    <link  href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
-
-
+  <img class="pic" src="" id="inn" onclick="rest(hero)"  alt="pic1">
+  <img class="pic"  src="" id="dagger" onclick="pickUpItem(hero,{type:'dagger',damage:2})"  alt="pic2">
+  <img class="pic" src="" id="bag" onclick="equipWeapon(hero)" alt="pic3">
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
