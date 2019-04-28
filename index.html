@@ -9,9 +9,32 @@
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
-  <img class="pic" src="" id="inn" onclick="rest(hero)"  alt="pic1">
-  <img class="pic"  src="" id="dagger" onclick="pickUpItem(hero,{type:'dagger',damage:2})"  alt="pic2">
-  <img class="pic" src="" id="bag" onclick="equipWeapon(hero)" alt="pic3">
+  <section>
+    <div class="container">
+       <!--hero_pics-->
+    <div id="hero_pics">
+        <img class="pic" src="image/bench.png" id="inn" onclick="rest(hero)"  alt="pic1">
+      <img class="pic"  src="image/dagger.png" id="dagger" onclick="pickupAndDelete(hero,{type:'dagger',damage:2})"  alt="pic2">
+      <img class="pic" src="image/shopping-bag.png" id="bag" onclick="equipWeapon(hero)" alt="pic3">
+    </div> 
+    <!--hero_dispaly-->   
+    <div id="hero_dispaly">
+        <h1>displayStats:</h1>
+        <div id="displayStats" ></div>
+    </div>
+    <!--hero_form--> 
+    <div id="hero_form">
+      <form action="#">
+        <input type="text" name="hero_name" id="hero_name" />
+        <button onclick="changeName()">change name</button>
+      </form>
+    </div>
+    <!--hero_fight-->
+      <div id="hero_fight">
+        <button onclick="fight()">fight</button>
+      </div>
+      
+    </div> 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>

@@ -1,5 +1,20 @@
-.pic{
+.container{
+    width:90%;
+    margin: auto;
+    padding:10px;
+    text-align:center; 
+}
+#hero_pics .pic{
     width: 120px;
     height: 120px; 
     border:1px solid #333;
+    margin:0 5px;
 }
+#hero_dispaly{ width: 30%; margin: 0 auto;text-align: left}
+
+#hero_fight button{
+    background-color: rgb(207, 8, 8);
+    border:none;padding:10px 20px;
+    font-size:14px;
+ }
+
